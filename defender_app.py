@@ -23,9 +23,9 @@ class machine:
 	@classmethod
 	def append_from_client(self):
 		sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-                sock.bind(("", 1338))
-                sock.listen(5)
-                conn, addr = sock.accept()
+		sock.bind(("", 1338))
+		sock.listen(5)
+		conn, addr = sock.accept()
 		print("Got connection from client!")
 		list.append(conn.recv(65536))
 def start():

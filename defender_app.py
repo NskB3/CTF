@@ -6,9 +6,10 @@ class machine:
 	@classmethod
 	def menu(self):
 		print("You Are defending!!\nOnly Works for Debian/Ubuntu Based Distros! Best Choice:\nKali 2018.2")
-		print("Get to work and patch the vulnerabilities in your VM\nIn Another Terminal!")
+		print("Get to work and patch the vulnerabilities,\nIn Another Terminal!")
 	@classmethod
 	def connection_from_servers(self):
+		global list
 		sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		sock.bind(("", 1337))
 		sock.listen(5)
